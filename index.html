@@ -26,6 +26,22 @@
 .question{padding:54px 24px}
 @media(max-width:1000px){.hero{min-height:415px}.era{min-height:310px}.lower>section{min-height:unset}}
 @media(max-width:520px){.hero{min-height:370px}.hero:before,.hero:after{width:60%}.hero-shade{background:rgba(24,19,16,.65)}.hero-content{padding:46px 18px}.era{padding:24px;min-height:305px}.lower>section{padding:24px}}
+
+/* Finale visuelle Abstimmung – 28.10.2026 */
+/* Die zwei Hero-Bilder überlappen und werden zur Mitte weich ausgeblendet. */
+.hero:before,.hero:after{width:59%;background-repeat:no-repeat}
+.hero:before{left:0;right:auto;-webkit-mask-image:linear-gradient(to right,#000 0%,#000 60%,transparent 100%);mask-image:linear-gradient(to right,#000 0%,#000 60%,transparent 100%)}
+.hero:after{right:0;left:auto;-webkit-mask-image:linear-gradient(to left,#000 0%,#000 60%,transparent 100%);mask-image:linear-gradient(to left,#000 0%,#000 60%,transparent 100%)}
+.hero-shade{background:linear-gradient(90deg,rgba(24,19,16,.18) 0%,rgba(24,19,16,.47) 27%,rgba(24,19,16,.74) 47%,rgba(24,19,16,.74) 53%,rgba(24,19,16,.46) 73%,rgba(24,19,16,.16) 100%)}
+.era p{font-size:16px;line-height:1.48}
+.lower h2{font-size:clamp(23px,1.65vw,27px)}
+.book-row p,.about p{font-size:15px;line-height:1.5}
+.topics a{font-size:13px;line-height:1.3}
+.topics img{aspect-ratio:2.05}
+section[id]{scroll-margin-top:100px}
+@media(max-width:1000px){section[id]{scroll-margin-top:145px}}
+@media(max-width:520px){.hero:before,.hero:after{width:67%}.hero-shade{background:rgba(24,19,16,.67)}.era p{font-size:15px}.book-row p,.about p{font-size:14px}}
+
 </style>
 </head>
 <body>
