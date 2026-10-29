@@ -45,6 +45,16 @@ section[id]{scroll-margin-top:100px}
 @media(max-width:520px){.hero:before,.hero:after{width:67%}.hero-shade{background:rgba(24,19,16,.67)}.era p{font-size:15px}.book-row p,.about p{font-size:14px}}
 
 @media(min-width:1001px) and (max-width:1280px){.nav{padding:10px 20px;gap:12px}.brand{font-size:24px}.brand small{font-size:11px}.links{gap:12px}.links a{font-size:13px}}
+
+/* Weitere historische Forschungsprojekte */
+.related-projects{max-width:1390px;margin:0 auto;padding:34px 28px 45px}
+.related-projects h2{font-size:clamp(24px,3vw,32px);margin:0 0 18px}
+.related-project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.related-project-grid a{display:block;padding:20px 22px;border:1px solid #dcd3c5;background:#f0eae0;text-decoration:none;transition:background .2s,border-color .2s}
+.related-project-grid a:hover,.related-project-grid a:focus-visible{background:#e8ddcf;border-color:#9e8463}
+.related-project-grid strong{display:block;font-size:17px;margin-bottom:6px}
+.related-project-grid span{display:block;font:13px/1.5 Arial,sans-serif;color:#605c54}
+@media(max-width:700px){.related-project-grid{grid-template-columns:1fr}.related-projects{padding:28px 18px}}
 </style>
 </head>
 <body>
@@ -56,5 +66,12 @@ section[id]{scroll-margin-top:100px}
 <section id="projekt"><h2>Über dieses Projekt</h2><div class="about"><img alt="Illustrative technische Schuhskizze" src="assets/project-sketch.webp"/><p>Die hölzerne Sohle ist eine unabhängige Forschungs- und Dokumentationsinitiative. Sie verbindet historische Quellen, eigene Beobachtungen und neue Fragen an die Zukunft der Schuhtechnik.</p><a class="btn" href="projekt.html">Mehr über das Projekt →</a></div></section></div>
 <section class="question" id="leitfrage"><h2>Quo vadis, Holzschuh?</h2><p>Hat die hölzerne Schuhsohle eine Zukunft – als sichtbarer Holzschuh, als Werkstoff im modernen Sportschuh oder in noch ganz anderen Formen?</p><p>Wir unterscheiden historische Belege, bestehende Technologien und eigene Zukunftsideen.</p></section></main>
 <div class="source-note">Hinweis: Die derzeitigen Illustrationen stammen aus einem KI-generierten Gestaltungskonzept. Sie sind keine historischen Originalfotografien oder Nachweise konkreter Maschinen. Quellen und Forschungsstand sind auf einer eigenen Seite dokumentiert: <a href="quellen.html">Quellen &amp; Dokumentation</a>.</div>
+<section class="related-projects" aria-labelledby="related-projects-title">
+<h2 id="related-projects-title">Weitere Forschungsprojekte</h2>
+<div class="related-project-grid">
+<a href="https://krafft-fahrnau.de/"><strong>Gebrüder Krafft – Fahrnau</strong><span>Industrie- und Schuhgeschichte im Wiesental</span></a>
+<a href="https://stadtbrand-todtnau.de/"><strong>Der Stadtbrand von Todtnau 1876</strong><span>Historische Forschung zum Stadtbrand</span></a>
+<a href="http://hairdressing-history.org/"><strong>International Hairdressing History</strong><span>Internationale Friseur- und Technikgeschichte</span></a>
+</div></section>
 <footer><div class="footer-inner"><div>© Die hölzerne Sohle · Unabhängiges Forschungsprojekt</div><div><a href="mailto:armin@wolfarth.ch">Kontakt</a><a href="quellen.html">Quellen</a><a href="rechtliches.html">Impressum &amp; Datenschutz</a></div></div></footer>
 </body></html>
